@@ -20,13 +20,13 @@ except PackageNotFoundError:  # pragma: no cover
     __version__ = "unknown"
 
 
-logger.disable(f"{{module}}")
+logger.disable(f"{{MODULE}}")
 
 
 
 app = typer.Typer(
-    name="{{module}}",
-    help="{{description}}",
+    name="{{MODULE}}",
+    help="{{DESCRIPTION}}",
     add_completion=False,
     no_args_is_help=True,
     rich_markup_mode="rich",
@@ -37,7 +37,7 @@ verbosity_level = 0
 def version_callback(value: bool) -> None:  # noqa FBT001
     """Prints the version of the package."""
     if value:
-        rprint(f"[yellow]boardgamegeek[/] version: [bold blue]{__version__}[/]")
+        rprint(f"[yellow]{{MODULE}}[/] version: [bold blue]{__version__}[/]")
         raise typer.Exit()
 
 

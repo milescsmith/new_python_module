@@ -1,5 +1,5 @@
 [tool.poetry]
-name = {{MODULE_NAME}}
+name = {{MODULE}}
 version = {{VERSION}}
 description = {{DESCRIPTION}}
 authors = {{AUTHOR}}

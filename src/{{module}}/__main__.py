@@ -1,7 +1,7 @@
 import typer
 from loguru import logger
 
-from {{module}} import version, version_callback, verbosity_level
+from {{MODULE}} import version, version_callback, verbosity_level
 
 @app.callback(invoke_without_command=True)
 @app.command(
